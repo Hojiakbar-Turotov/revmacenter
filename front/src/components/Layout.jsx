@@ -12,7 +12,12 @@ export default function Layout() {
             <Outlet />
 
             {/* Footer (ixtiyoriy) */}
-            <Footer />
+            <Footer
+                phoneNumbers={["+998(99) 818-01-11", "+998(90) 123-45-67"]}
+                address="Кибрайский район Университетская ул., 5/1"
+                whatsappLink="https://wa.me/998998180111"
+                telegramLink="https://t.me/revma_center_clinic"
+            />
         </>
     );
 }
