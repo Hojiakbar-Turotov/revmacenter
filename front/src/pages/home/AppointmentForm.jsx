@@ -54,11 +54,11 @@ const AppointmentForm = ({
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!agree) {
-            toast.error("Iltimos, maxfiylik siyosatiga rozilik bering.");
+            toast.error("Пожалуйста, дайте согласие на политику конфиденциальности.");
             return;
         }
         if (!validatePhone(phone)) {
-            toast.error("Telefon raqamingizni to‘g‘ri kiriting!");
+            toast.error("Пожалуйста, введите правильный номер телефона!");
             return;
         }
 
@@ -66,10 +66,11 @@ const AppointmentForm = ({
         if (onSubmit) {
             onSubmit(formData);
         } else {
-            console.log("Form data:", formData);
+            console.log("Данные формы:", formData);
         }
-        toast.success("So‘rov yuborildi!");
+        toast.success("Запрос отправлен!");
         resetForm();
+
     };
 
     return (
@@ -102,7 +103,7 @@ const AppointmentForm = ({
                                     disabled={!selectedService}
                                     required
                                 >
-                                    {(subServicesMap[selectedService] || [{ value: "", label: "Avval xizmatni tanlang" }]).map(({ value, label }) => (
+                                    {(subServicesMap[selectedService] || [{ value: "", label: "Сначала выберите услугу" }]).map(({ value, label }) => (
                                         <option key={value} value={value}>{label}</option>
                                     ))}
                                 </select>
