@@ -4,8 +4,8 @@ import ServiceGrid from './ServiceGrid';
 import PopularServices from './PopularServices';
 import DoctorsSlider from './DoctorsSlider';
 import BlogSection from './BlogSection';
-import MapSection from './MapSection';
-import AppointmentForm from './AppointmentForm';
+import MapSection from '../../components/MapSection';
+import AppointmentForm from '../../components/AppointmentForm';
 
 const services = [
     {

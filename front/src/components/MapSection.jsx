@@ -1,7 +1,7 @@
 import React from "react";
 
 const MapSection = ({ 
-  title = "Как нас найти", 
+  title , 
   mapSrc = "https://yandex.uz/map-widget/v1/?ll=69.344224%2C41.368629&z=16&l=map&pt=69.344224,41.368629,pm2rdm", 
   height = "400px" 
 }) => {
